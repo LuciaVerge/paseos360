@@ -7,15 +7,13 @@ h6 {
 	margin: 0;
 	font-weight: 500;
 	font-family: 'Orator std';
+
 }
 
 /* ::::::Barra de Navegacion:::::: */
 
 .navbar-nav{
     font-family: 'Orator std';   
-}
-.nav-link{
-    color: black;
 }
 
 
@@ -28,6 +26,7 @@ h6 {
     background: radial-gradient(ellipse at bottom, #44afae, #0c0f09);
     overflow: hidden;
 }
+
 
 head::before, head::after,
 body::before, body::after {
@@ -92,6 +91,9 @@ head::after {
     overflow: hidden;
 }
 
+.nivel{
+    color:rgb(253, 253, 253)
+}
 
 #ejemplo{
     background-color: rgb(255, 255, 255);
@@ -105,3 +107,17 @@ head::after {
 
 
 
+/* ::::::Footer:::::: */
+
+#footer{
+    font-family: 'Orator std';
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+li {
+    list-style-type: none;
+    
+  }
+  
