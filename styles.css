@@ -98,7 +98,8 @@ head::after {
 #ejemplo{
     background-color: rgb(255, 255, 255);
     height: 950px;
-    padding-top: 10%;
+    padding-top: 5%;
+    
 }
 
 #iconos{
