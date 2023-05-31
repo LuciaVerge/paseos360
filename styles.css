@@ -357,3 +357,16 @@ input:checked + .slide-container .nav label { display: block; }
   line-height: 1.4;
   word-spacing: 100vw;
 }
+
+
+/* ::::::Formulario:::::: */
+
+.formulario form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5%;
+  margin-bottom: 10%;
+  margin-left: 20%;
+  margin-right: 20%;
+}
