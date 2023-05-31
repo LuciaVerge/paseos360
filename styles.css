@@ -1,3 +1,10 @@
+@font-face {
+  font-family: "Orator-Std-Font";
+  src: url("./fonts/Orator-Std-Font.otf"); 
+}
+
+
+
 h1,
 h2,
 h3,
@@ -6,14 +13,13 @@ h5,
 h6 {
 	margin: 0;
 	font-weight: 500;
-	font-family: 'Orator std';
-
+  font-family: 'Orator-Std-Font';
 }
 
 /* ::::::Barra de Navegacion:::::: */
 
 .navbar-nav{
-    font-family: 'Orator std';   
+  font-family: 'Orator-Std-Font';   
 }
 
 
@@ -237,15 +243,15 @@ ul.slides input {
   position: absolute;
   left: 0;
   right: 0;
-  bottom: 20px;
+  bottom: 10px;
   z-index: 999;
   text-align: center;
 }
 
 .carousel-dots .carousel-dot {
   display: inline-block;
-  width: 10px;
-  height: 10px;
+  width: 8px;
+  height: 8px;
   border-radius: 50%;
   background-color: #fff;
   opacity: 0.5;
@@ -267,7 +273,10 @@ input#img-2:checked ~ .carousel-dots label#img-dot-2,
 input#img-3:checked ~ .carousel-dots label#img-dot-3,
 input#img-4:checked ~ .carousel-dots label#img-dot-4,
 input#img-5:checked ~ .carousel-dots label#img-dot-5,
-input#img-6:checked ~ .carousel-dots label#img-dot-6 {
+input#img-6:checked ~ .carousel-dots label#img-dot-6,
+input#img-7:checked ~ .carousel-dots label#img-dot-7,
+input#img-8:checked ~ .carousel-dots label#img-dot-8,
+input#img-9:checked ~ .carousel-dots label#img-dot-9 {
 opacity: 1;
 }
 
