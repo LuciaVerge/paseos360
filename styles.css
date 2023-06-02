@@ -40,6 +40,10 @@ h6 {
 
 /* ::::::Secciones:::::: */
 
+.presentacion{
+  color:rgb(253, 253, 253)
+}
+
 #servicios{
     padding-top: 10%;
     padding-bottom: 10%;
@@ -365,8 +369,13 @@ input:checked + .slide-container .nav label { display: block; }
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 5%;
-  margin-bottom: 10%;
+  margin-top: 15%;
+  margin-bottom: 20%;
   margin-left: 20%;
   margin-right: 20%;
+
+}
+
+#campos{
+  margin:4%
 }
