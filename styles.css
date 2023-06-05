@@ -241,7 +241,7 @@ input:checked + .slide-container .nav label { display: block; }
 
 /*::::::Iframe:::::*/
 
-.video-demo{
+#video-demo{
   margin-top: 5%;
   margin-bottom: 5%;
 }
@@ -290,7 +290,7 @@ input:checked + .slide-container .nav label { display: block; }
   width: 100%;
 }
 
-@media(min-width: 540px){
+@media(max-width: 540px){
   .card-grid{
     grid-template-columns: repeat(2, 1fr); 
   }
