@@ -19,11 +19,14 @@ h6 {
   color: black; /* Establece el color deseado para los enlaces */
   text-decoration: none; /* Elimina el subrayado */
 }
+
 /* ::::::Barra de Navegacion:::::: */
 
 .navbar-nav{
-  font-family: 'Orator-Std-Font';   
+  font-family: 'Orator-Std-Font';  
+  font-size: 25px;
 }
+
 
 
 /* ::::::Sector Animado:::::: */
@@ -31,9 +34,8 @@ h6 {
 #animacion{
     padding-top: 10%;
     padding-bottom: 10%;
-    height: 100%;
     background: radial-gradient(ellipse at bottom, #44afae, #0c0f09);
-    overflow: hidden;
+    
 }
 
 
@@ -254,6 +256,7 @@ input:checked + .slide-container .nav label { display: block; }
   --width-container: 1200px;
 }
 
+
 *{
   border: 0;
   margin: 0;
@@ -265,24 +268,17 @@ input:checked + .slide-container .nav label { display: block; }
   align-items: flex-start;
   background-image: linear-gradient(15deg, #2a6973 150%);
   display: flex;
-  min-height: 100%;
   justify-content: center;
   padding: var(--spacing-xxl) var(--spacing-l);
 }
 
 .card-grid{
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-column-gap: var(--spacing-l);
   grid-row-gap: var(--spacing-l);
   max-width: var(--width-container);
   width: 100%;
-}
-
-@media(min-width: 990px){
-  .card-grid{
-    grid-template-columns: repeat(2, 1fr); 
-  }
 }
 
 
@@ -310,7 +306,7 @@ input:checked + .slide-container .nav label { display: block; }
   right: 0;
   top: 0;
   transform-origin: center;
-  trsnsform: scale(1) translateZ(0);
+  transform: scale(1) translateZ(0);
   transition: 
     filter 200ms linear,
     transform 200ms linear;
@@ -333,7 +329,7 @@ input:checked + .slide-container .nav label { display: block; }
 
 .card__category{
   color: var(--text-light);
-  font-size: 0.9rem;
+  font-size: 1.3rem;
   margin-bottom: var(--spacing-s);
   text-transform: uppercase;
 }
@@ -354,12 +350,26 @@ input:checked + .slide-container .nav label { display: block; }
   flex-direction: column;
   align-items: center;
   margin-top: 15%;
-  margin-bottom: 20%;
+  margin-bottom: 25%;
   margin-left: 20%;
   margin-right: 20%;
-
 }
+
+
 
 #campos{
   margin:4%
 }
+
+
+
+/*::::::Responsive::::::*/
+
+
+
+@media(min-width: 990px){
+  .card-grid{
+    grid-template-columns: repeat(4, 1fr); 
+  }
+}
+
