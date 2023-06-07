@@ -8,7 +8,7 @@ html {
 }
 
 body{
-  background: radial-gradient(ellipse at bottom, #44afae, #0c0f09);
+  background: radial-gradient(ellipse at bottom, #44afae, #5c265c);
 }
 
 h1,
@@ -35,6 +35,7 @@ p{
 .navbar-nav{
   font-family: 'Orator-Std-Font';  
   font-size: 25px;
+  /* box-shadow: 8px 2px 25px rgba(8, 8, 8, 0.9);*/
 }
 
 
@@ -49,20 +50,21 @@ p{
   text-align: center;
   display: flex;
   flex-direction: column;
+  background: radial-gradient(ellipse at bottom, #44afae, #5c265c);
 }
 
 #tours{
   color: #d8d4d4;
   padding-top: 10%;
   padding-bottom: 10%;
-  
+  background: radial-gradient(ellipse at bottom, #44afae, #5c265c);
 }
 
 #contacto{
   color: #d8d4d4;
   padding-top: 10%;
   padding-bottom: 10%;
-  
+  background: radial-gradient(ellipse at bottom, #44afae, #5c265c);
 }
 
 #iconos{
@@ -86,14 +88,17 @@ p{
     padding-bottom: 10%;
     height: 100%;
     overflow: hidden;
+    background: radial-gradient(ellipse at bottom, #44afae, #5c265c);
 }
 
 .contenedor-fotografia {
   margin-top: 8%;
+  overflow: hidden;
 }
 
 .contenedor-video {
   margin-top: 5%;
+  overflow: hidden;
 }
 
 .card-foto{
@@ -137,10 +142,12 @@ p{
 #footer a {
   color: rgb(255, 255, 255); /* Establece el color deseado para los enlaces */
   text-decoration: none; /* Elimina el subrayado */
+  
 }
 
 
 #footer{  
+  background: radial-gradient(ellipse at bottom, #44afae, #5c265c);
     font-family: 'Orator std';
     display: flex;
     flex-direction: row;
@@ -157,7 +164,7 @@ li {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    background-color: #a2b1b1;
+    background-color: #080808;
 }
 
 
