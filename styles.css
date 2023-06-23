@@ -140,7 +140,7 @@ header{
 }
 
 .nivel{
-  margin-bottom: 15%;
+
   text-align: center;
 }
 
@@ -201,7 +201,7 @@ header{
   margin-right: 5%;
   margin-bottom: 5%;
   width: 498px;
-  height: 628px;
+  height: 580px;
   overflow: hidden;
   background-color: #ffffff;
   display: flex;
@@ -215,7 +215,7 @@ header{
   margin-right: 5%;
   margin-bottom: 5%;
   width: 498px;
-  height: 628px;
+  height: 580px;
   overflow: hidden;
   background-color: #ffffff;
   display: flex;
@@ -331,14 +331,14 @@ ul.slides input {
 }
 
 .carousel-controls {
-  position: absolute;
-  top: 0;
+  
+  top: 100px;
   left: 0;
   right: 0;
   z-index: 999;
   font-size: 100px;
   line-height: 600px;
-  color: #fff;
+  color: #ff2121;
 }
 
 .carousel-controls label {
@@ -384,7 +384,7 @@ ul.slides input {
   width: 8px;
   height: 8px;
   border-radius: 50%;
-  background-color: #fff;
+  background-color: #ffffff;
   opacity: 0.5;
   margin: 10px;
 }
@@ -621,17 +621,11 @@ li {
   }
   
   .nivel{
-    margin-bottom: 1%;
+   
   }
   
  
- 
-  /*ul.slides {
-    height: 340px;
-    width: 605px;
-    list-style: none;
-  }
-  */
+
 
 }
 
