@@ -379,10 +379,13 @@ form {
 
 
 #footer{  
-    font-family: 'Orator std';
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+  position: relative;
+  bottom: 650px;
+  background-image: linear-gradient(to left,#5ee7df 0%,#b490ca 100%);;
+  font-family: 'Orator std';
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
 
 li {
