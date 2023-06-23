@@ -307,104 +307,7 @@ header{
   bottom: 700px;
 }
 
-
-/* ::::::Formulario de Contacto:::::: */
-
-
-#next-btn{
-  background-color: #9c27b0;
-}
-
-#campos{
-  margin:4%
-}
-
-#campos span{
-  background-color: hsl(186, 48%, 76%);
-}
-
-#contacto{
-  position: relative;
-  bottom: 700px;
-  background-color: #fafafa;
-  padding-top: 10%;
-  padding-bottom: 10%;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-content: center;
-}
-
-.contacto-presentacion{
-  margin: 8%;
-  width: 500px;
-  height: 203px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
-
-.contacto-presentacion h1{
-  color: #9c27b0;
-}
-
-.textform{
-  width: 400px;
-  height: 100px;
-  text-align: start;
-  margin-top: 2%;
-} 
-
-.formulario{
-  margin:8%;
-
-}
-
-form {
-  width: 500px;
-  height: 203px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-
-/* ::::::Footer:::::: */
-
-#footer a {
-  color: #ffffff; /* Establece el color deseado para los enlaces */
-  text-decoration: none; /* Elimina el subrayado */
-  
-}
-
-
-#footer{  
-  position: relative;
-  bottom: 650px;
-  background-image: linear-gradient(to left,#5ee7df 0%,#b490ca 100%);;
-  font-family: 'Orator std';
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-}
-
-li {
-    list-style-type: none;
-    
-  }
-
-.footer-inf{
-    font-family: 'Orator std';
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    background-color: #7e7e7e;
-}
-
-
-
-
-/* ::::::Tours:::::: */
+/* ::::::Miniaturas Tours:::::: */
 
 :root{
   --background-dark: #2d3548;
@@ -495,6 +398,113 @@ li {
   line-height: 1.4;
   word-spacing: 100vw;
 }
+
+
+
+/* ::::::Formulario de Contacto:::::: */
+
+
+#next-btn{
+  background-color: #9c27b0;
+}
+
+#campos{
+  margin:4%
+}
+
+#campos span{
+  background-color: hsl(186, 48%, 76%);
+}
+
+#contacto{
+  position: relative;
+  bottom: 700px;
+  background-color: #fafafa;
+  padding-top: 10%;
+  padding-bottom: 10%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+}
+
+.contacto-presentacion{
+  margin: 8%;
+  width: 500px;
+  height: 203px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.contacto-presentacion h1{
+  color: #9c27b0;
+}
+
+.textform{
+  width: 400px;
+  height: 100px;
+  text-align: start;
+  margin-top: 2%;
+} 
+
+.formulario{
+  margin:8%;
+
+}
+
+form {
+  width: 500px;
+  height: 203px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+/* ::::::Footer:::::: */
+
+#footer a {
+  color: #504f4f; /* Establece el color deseado para los enlaces */
+  text-decoration: none; /* Elimina el subrayado */
+  
+}
+
+
+footer{  
+  background-image: linear-gradient(to left,#5ee7df 0%,#b490ca 100%);;
+  font-family: 'Orator std';
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.links{
+  font-size: 17px;
+  margin: 20px;
+}
+
+.textfooter{
+  margin: 25px;
+  color: #504f4f;
+}
+
+.iconos-footer{
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  
+}
+
+.iconos-footer img{
+  width: 20px;
+  margin-top:  15px;
+  margin-bottom: 30px;
+  margin-left: 50px;
+  margin-right: 50px;
+  
+}
+
 
 
 
