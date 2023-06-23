@@ -311,21 +311,62 @@ header{
 /* ::::::Formulario de Contacto:::::: */
 
 
-#contacto{
-  background-color: #d8d4d4;
-  color: #141414;
-  padding-top: 10%;
-  padding-bottom: 10%;
+#next-btn{
+  background-color: #9c27b0;
 }
 
+#campos{
+  margin:4%
+}
 
-#iconos{
+#campos span{
+  background-color: hsl(186, 48%, 76%);
+}
+
+#contacto{
+  position: relative;
+  bottom: 700px;
+  background-color: #fafafa;
+  padding-top: 10%;
+  padding-bottom: 10%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+}
+
+.contacto-presentacion{
+  margin: 8%;
+  width: 500px;
+  height: 203px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.contacto-presentacion h1{
+  color: #9c27b0;
+}
+
+.textform{
+  width: 400px;
+  height: 100px;
+  text-align: start;
+  margin-top: 2%;
+} 
+
+.formulario{
+  margin:8%;
+
+}
+
+form {
+  width: 500px;
+  height: 203px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-
-
 
 
 /* ::::::Footer:::::: */
@@ -452,26 +493,6 @@ li {
   word-spacing: 100vw;
 }
 
-
-/* ::::::Formulario:::::: */
-
-.formulario form{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 15%;
-  margin-bottom: 25%;
-  margin-left: 20%;
-  margin-right: 20%;
-}
-
-#next-btn{
-  background-color: #0068c9;
-}
-
-#campos{
-  margin:4%
-}
 
 
 
