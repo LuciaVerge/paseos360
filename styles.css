@@ -7,6 +7,14 @@
 
 html {
   scroll-behavior: smooth;
+  
+}
+
+body{
+  background-image: url(./images/fondo2.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 
@@ -94,7 +102,7 @@ header{
 #ejemplo{
   color: #d8d4d4;
   position: relative;
-  bottom: 650px;
+  bottom: 690px;
   padding-top: 10%;
   padding-bottom: 10%;
   display: flex;
@@ -119,6 +127,7 @@ header{
 }
 
 #servicios{
+  background-color: #ffffff;
   position: relative;
   bottom: 400px;
   margin-bottom: 10%;
@@ -304,8 +313,6 @@ header{
 
 #tours{
   color: #000000;
-  padding-top: 10%;
-  padding-bottom: 10%;
   position: relative;
   bottom: 200px;
 }
@@ -421,8 +428,8 @@ header{
 
 #contacto{
   background-color: #fafafa;
-  padding-top: 20%;
-  padding-bottom: 20%;
+  padding-top: 10%;
+  padding-bottom: 10%;
   display: flex;
   flex-direction: row;
   justify-content: center;
