@@ -185,7 +185,6 @@ header{
 /* ::::::Mas Servicios:::::: */
 
 #mas-serv{
-  padding-bottom: 10%;
   background-color: #f5f5f5;
   position: relative;
   bottom: 200px;
@@ -207,7 +206,7 @@ header{
 }
 .moreserv{
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
 }
 
@@ -216,8 +215,8 @@ header{
   margin-left: 5%;
   margin-right: 5%;
   margin-bottom: 5%;
-  width: 498px;
-  height: 580px;
+  width: 800px;
+  height: 680px;
   overflow: hidden;
   background-color: #ffffff;
   display: flex;
@@ -230,8 +229,8 @@ header{
   margin-left: 5%;
   margin-right: 5%;
   margin-bottom: 5%;
-  width: 498px;
-  height: 580px;
+  width: 800px;
+  height: 680px;
   overflow: hidden;
   background-color: #ffffff;
   display: flex;
@@ -242,7 +241,7 @@ header{
 .card-foto{
   margin: 5%;
   text-align: center;
-  width: 326px;
+  width: 700px;
   height: 282px;
   
 }
@@ -257,7 +256,7 @@ header{
 .card-video{
   margin-top: 5%;
   text-align: center;
-  width: 326px;
+  width: 700px;
   height: 282px;
 }
 
@@ -270,16 +269,17 @@ header{
 }
 
 .video iframe{
-  height: 216px;
-  width: 380px;
+  height: 800px;
+  width: 600px;
+  
 }
 
 .video{
   margin-top: 5%;
   margin-left: 5%;
   margin-right: 5%;
-  height: 214px;
-  width: 385px;
+  height: 350px;
+  width: 200px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -292,8 +292,8 @@ header{
   margin-top: 5%;
   margin-left: 5%;
   margin-right: 5%;
-  height: 214px;
-  width: 385px;
+  height: 800px;
+  width: 600px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -644,6 +644,7 @@ footer{
   }
   .serv-cards{
     display: flex;
+    flex-direction: row;
     align-items: center;
     margin-left: 5%;
     margin-right: 5%;
@@ -660,7 +661,6 @@ footer{
   }
   
   .nivel{
-  
     text-align: center;
   }
   
@@ -687,6 +687,116 @@ footer{
     margin-left: 10%;
     margin-right: 10%;
   }
+  #mas-serv{
+    padding-top: 10%;
+    padding-bottom: 10%;
+    background-color: #f5f5f5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  #mas-serv h1{
+    color: #9c27b0;
+    margin-top: 15%;
+    margin-bottom: 15%;
+  }
+  .textserv{
+    width: 400px;
+    height: 100px;
+    text-align: center;
+    margin-top: 2%;
+  }
+  .moreserv{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  .contenedor-fotografia {
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 5%;
+    width: 498px;
+    height: 580px;
+    overflow: hidden;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .contenedor-video {
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 5%;
+    width: 498px;
+    height: 580px;
+    overflow: hidden;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .card-foto{
+    margin: 5%;
+    text-align: center;
+    width: 326px;
+    height: 282px;
+    
+  }
+  
+  .card-foto h5{
+    margin-top: 5%;
+    margin-bottom: 8%;
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+  
+  .card-video{
+    margin-top: 5%;
+    text-align: center;
+    width: 326px;
+    height: 282px;
+  }
+  
+  
+  .card-video h5{
+    margin-top: 5%;
+    margin-bottom: 8%;
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+  
+  .video iframe{
+    height: 216px;
+    width: 380px;
+  }
+  
+  .video{
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+    height: 214px;
+    width: 385px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .carousel{
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+    height: 214px;
+    width: 385px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
 }
 
 
