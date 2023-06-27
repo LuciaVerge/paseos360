@@ -47,6 +47,7 @@ nav {
   font-family: 'YsabeauInfant';  
   text-transform: uppercase;
   font-size: 22px;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
   margin-right: 2%;
 }
 
@@ -97,6 +98,13 @@ header{
 }
 
 /* ::::::Demo Tour:::::: */ 
+
+.up-icon{
+  position: fixed;
+  z-index: 9999;
+  left: 900px;
+  top: 1600px;
+}
 
 #ejemplo{
   color: #d8d4d4;
@@ -588,6 +596,13 @@ footer{
   .vertical-line {
     height: 150px;
   }
+  .up-icon{
+    position: fixed;
+    z-index: 9999;
+    left: 1800px;
+    top: 850px;
+  }
+
   #ejemplo{
     position: relative;
     bottom: 780px;
