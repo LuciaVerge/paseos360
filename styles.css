@@ -578,13 +578,14 @@ footer{
     position: relative;
     bottom: 1080px;
     margin-top: 15%;
+    margin-bottom: 15%;
     margin-left: 30%;
     margin-right: 30%;
   }
   
   .redes-vertical{
     position: relative;
-    bottom: 1100px;
+    bottom: 1300px;
     margin-left: 5%;
   }
   
