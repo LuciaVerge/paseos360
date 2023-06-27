@@ -604,10 +604,15 @@ footer{
     flex-direction: row;
     align-items: center;
   }
-
+  .texto{
+    font-size: 18px;
+  }
   #mas-serv{
     padding-top: 10%;
     padding-bottom: 10%;
+  }
+  .textserv{
+    font-size: 18px;
   }
 
   .moreserv{
@@ -627,13 +632,21 @@ footer{
   }
   
   .card-foto{
-    width: 326px;
-  }
-
-  .card-video{
+    font-size: 18px;
     width: 326px;
   }
  
+  .card-foto h5{
+  font-size: 18px;
+  } 
+
+  .card-video{
+    font-size: 18px;
+    width: 326px;
+  }
+  .card-video h5{
+    font-size: 18px;
+  }
   .video iframe{
     height: 216px;
     width: 380px;
@@ -659,7 +672,43 @@ footer{
   flex-direction: column;
   align-items: flex-start;
   }
+
+  #next-btn{
+  font-size: 17px;
+  }
+
+  #campos span{
+  font-size: 18px;
+  }
+  
+  .textform{
+   font-size: 18px;
+   text-align: start;
+  } 
    
+  .contacto-presentacion{
+  margin: 8%;
+  width: 700px;
+  height: 203px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  }
+
+  .formulario{
+  margin: 8%;
+  font-family: 'YsabeauInfant';
+  text-transform: uppercase;
+  width: 700px;
+  height: 203px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  }
+
+  footer{  
+  font-size: 15px;
+  }
 }
 
 
