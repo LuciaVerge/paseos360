@@ -444,8 +444,8 @@ nav {
 
 #contacto{
   background-color: #fafafa;
-  padding-top: 10%;
-  padding-bottom: 10%;
+  padding-top: 5%;
+  padding-bottom: 5%;
   display: flex;
   flex-direction: column;
   align-content: center;
@@ -453,28 +453,45 @@ nav {
 }
 
 .contacto-presentacion{
-  margin: 8%;
   width: 700px;
-  height: 203px;
+  height: 500px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-around;
 }
 
 .contacto-presentacion h1{
   color: #9c27b0;
-  margin-bottom: 5%;
 }
 
-.textform{
+.confian{
+  width: 750px;
+  height: 200px;
+  margin: 1%;
+}
+.logos-clientes img{
+  width: 90px;
+  margin: 10%;
+}
+.logos-clientes{
+  width: 700px;
+  height: 210px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+ }
+
+/*.textform{
   font-size: 25px;
   width: 500px;
   height: 100px;
   text-align: start;
   margin-top: 5%;
-} 
+} */
 
-.formulario{
+/*.formulario{
   margin:5%;
   font-family: 'YsabeauInfant';
   text-transform: uppercase;
@@ -483,15 +500,15 @@ nav {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
+}*/
 
-form {
+/*form {
   width: 500px;
   height: 203px;
   display: flex;
   flex-direction: column;
   align-items: center;
-}
+}*/
 
 
 /* ::::::Footer:::::: */
@@ -669,16 +686,9 @@ footer{
   #contacto{
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-content: center;
+  
   }
-  .contacto-presentacion{
-    width: 500px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
+    
   #next-btn{
   font-size: 17px;
   }
@@ -691,17 +701,28 @@ footer{
    font-size: 18px;
    text-align: start;
   } 
-   
+  
   .contacto-presentacion{
-  margin: 8%;
-  width: 700px;
-  height: 203px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
   }
-
-  .formulario{
+  .logos-clientes img{
+    width: 150px;
+    margin: 10%;
+  }
+  .logos-clientes{
+    width: 700px;
+    height: 510px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+   }
+  
+  /*.formulario{
   margin: 8%;
   font-family: 'YsabeauInfant';
   text-transform: uppercase;
@@ -710,7 +731,7 @@ footer{
   display: flex;
   flex-direction: column;
   align-items: center;
-  }
+  }*/
 
   footer{  
   font-size: 15px;
