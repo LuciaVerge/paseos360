@@ -72,6 +72,7 @@ nav {
 .redes-vertical{
   position: relative;
   bottom: 220px;
+  width: 100px;
   margin-left: 5%;
 }
 
@@ -587,6 +588,7 @@ footer{
     margin-left: 30%;
     margin-right: 30%;
   }
+  
   
   .redes-vertical{
     position: relative;
