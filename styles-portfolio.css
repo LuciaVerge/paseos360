@@ -9,8 +9,7 @@ html {
 }  
 
 body{
-    
-    background-image: linear-gradient(to left,#c3cac9 0%,#b490ca 100%);
+    background-image: linear-gradient(to left,#5ee7df 0%,#b490ca 100%);
 }
 
 h1,
@@ -48,6 +47,7 @@ nav {
     flex-direction: column;
     height: 500px;
     margin-top: 5%;
+    margin-bottom: 5%;
     margin-left: 20%;
     margin-right: 20%;
     text-align: center;
@@ -65,7 +65,8 @@ nav {
 /* ::::::Fotos miniaturas:::::: */
 
 .fotografias{
-    background-image: linear-gradient(to left,#5ee7df 0%,#b490ca 100%);
+    /*background-image: linear-gradient(to left,#b496c7 0%,#b0cfcd 100%);*/
+    background-color: #fdfdfd;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -97,7 +98,7 @@ nav {
 }
 
 footer{  
-    background-image: linear-gradient(to left,#c3cac9 0%,#b490ca 100%);
+    background-image: linear-gradient(to left,#5ee7df 0%,#b490ca 100%);
     font-family: 'YsabeauInfant';
     text-transform: uppercase;
     font-size: 18px;
@@ -142,7 +143,7 @@ footer{
     footer{  
         font-size: 15px;
         }
-        
+
     .up-icon{
         position: fixed;
         z-index: 9999;
