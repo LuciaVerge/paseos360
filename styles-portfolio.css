@@ -9,7 +9,7 @@ html {
 }  
 
 body{
-    background-image: linear-gradient(to left,#5ee7df 0%,#b490ca 100%);
+    background-image: linear-gradient(to left,#b490ca 0%, #5ee7df 100%);
 }
 
 h1,
