@@ -9,8 +9,8 @@ html {
 }  
 
 body{
-    background-image: linear-gradient(to left,#5ee7df 0%,#b490ca 100%);
     
+    background-image: linear-gradient(to left,#c3cac9 0%,#b490ca 100%);
 }
 
 h1,
@@ -26,10 +26,6 @@ p{
 
 /* ::::::Inicio:::::: */
 
-.fondo{
-    width: 100%;
-    height: 100%;
-}
 
 .logo{
     margin-top: 1%;
@@ -50,7 +46,8 @@ nav {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    margin-top: 10%;
+    height: 500px;
+    margin-top: 5%;
     margin-left: 20%;
     margin-right: 20%;
     text-align: center;
@@ -58,22 +55,34 @@ nav {
     color: #fdfdfd;
 }
 
+.up-icon{
+    position: fixed;
+    z-index: 9999;
+    left: 900px;
+    top: 1600px;
+  }
+
 /* ::::::Fotos miniaturas:::::: */
 
 .fotografias{
+    background-image: linear-gradient(to left,#5ee7df 0%,#b490ca 100%);
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
 .fotografias img{
-    width: 500px;
+    width: 790px;
     margin: 3%;
 }
 
 .foto{
-    width: 600px;
+    width: 800px;
+
 }
+
+
 
 /* ::::::Footer:::::: */
 
@@ -88,6 +97,7 @@ nav {
 }
 
 footer{  
+    background-image: linear-gradient(to left,#c3cac9 0%,#b490ca 100%);
     font-family: 'YsabeauInfant';
     text-transform: uppercase;
     font-size: 18px;
@@ -120,4 +130,23 @@ footer{
     margin-left: 50px;
     margin-right: 50px;
     
+}
+
+
+/*::::::Responsive::::::*/
+@media(min-width: 990px){
+    nav {
+        font-size: 19px;
+      }
+      
+    footer{  
+        font-size: 15px;
+        }
+        
+    .up-icon{
+        position: fixed;
+        z-index: 9999;
+        left: 1800px;
+        top: 850px;
+        }
 }
