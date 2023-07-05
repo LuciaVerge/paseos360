@@ -234,6 +234,11 @@ nav {
   align-items: center;
 }
 
+.contenedor-fotografia a{
+  color: #0c96a8;
+  text-decoration: none;
+}
+
 .contenedor-video {
   margin-top: 5%;
   margin-left: 5%;
