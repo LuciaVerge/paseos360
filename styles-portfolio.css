@@ -62,6 +62,10 @@ nav {
     top: 1600px;
   }
 
+  .doble-click{
+    display: none;
+  }
+
 /* ::::::Fotos miniaturas:::::: */
 
 .fotografias{
@@ -149,5 +153,8 @@ footer{
         z-index: 9999;
         left: 1800px;
         top: 850px;
+        }
+    .doble-click{
+        display: block;
         }
 }
