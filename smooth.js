@@ -1,4 +1,4 @@
-// Capturamos el evento de scroll
+/*// Capturamos el evento de scroll
 window.addEventListener('wheel', handleWheelScroll);
 
 // Función para el desplazamiento suave
@@ -18,4 +18,4 @@ function handleWheelScroll(event) {
     top: newPosition,
     behavior: 'smooth'
   });
-}
+}*/
