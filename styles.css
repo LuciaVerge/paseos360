@@ -11,9 +11,10 @@ html {
 
 body{
   background-image: url(./images/fondo3.jpg);
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
-  
+  background-attachment: fixed;
+  background-position: center;
 }
 
 
