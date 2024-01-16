@@ -10,11 +10,7 @@ html {
 }
 
 body{
-  background-image: url(./images/fondo3.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
+  background-color: #ffffff;
 }
 
 
@@ -32,10 +28,6 @@ p{
 
 /* ::::::Inicio:::::: */
 
-.fondo{
-  width: 100%;
-  height: 100%;
-}
 
 .logo{
   margin-top: 1%;
@@ -54,6 +46,11 @@ nav {
 
 
 .presentacion{
+  background-image: url(./images/fondo3.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
   display: flex;
   justify-content: center;
   flex-direction: column;
