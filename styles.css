@@ -35,13 +35,30 @@ p{
   width: 50px;
 }
 
-nav {
+#mainNav {
   float: right;
   font-family: 'YsabeauInfant';  
   text-transform: uppercase;
   font-size: 22px;
-  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
-  margin-right: 2%;
+  /*text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);*/
+  color: #020113;
+  margin: 10%;
+}
+
+
+.menu_bar{
+ display: none;
+}
+
+#mainNav a{
+  color: #19131a;
+  text-decoration: none; /*quitamos subrayado de los links*/
+  padding: 20px;
+  display: block;
+}
+
+#mainNav a:hover{
+  color: #9c27b0; /*Color al pasar mouse por navbar*/
 }
 
 
@@ -620,22 +637,15 @@ footer{
     grid-template-columns: repeat(4, 1fr); 
   }
   
-  /*.logo{
-    width: 250px;
-  }*/
-  
-  nav {
-    font-size: 19px;
+  #mainNav{
+    margin: 0%;
   }
   
-  /*.presentacion{
-    margin-top: 15%;
-    margin-bottom: 15%;
-    margin-left: 30%;
-    margin-right: 30%;
-  }*/
-  
-  
+  #mainNav a{
+    display: inline-block;
+  }
+
+
   .redes-vertical{
     position: relative;
     bottom: 350px;
