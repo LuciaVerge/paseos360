@@ -145,8 +145,8 @@ header{
 .up-icon{
   position: fixed;
   z-index: 9999;
-  left: 900px;
-  top: 1600px;
+  right: 5%;
+  top: 90%;
 }
 
 #ejemplo{
@@ -696,7 +696,7 @@ footer{
   }
   
   .iconos-redes img{
-    width: 28px;
+    width: 25px;
     margin-bottom: 25px;
   }
   
@@ -706,8 +706,8 @@ footer{
   .up-icon{
     position: fixed;
     z-index: 9999;
-    left: 1800px;
-    top: 850px;
+    right: 5%;
+    top: 90%;
   }
 
   #ejemplo{
