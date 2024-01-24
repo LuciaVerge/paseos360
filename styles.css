@@ -117,7 +117,7 @@ header{
 
 .redes-vertical{
   position: relative;
-  bottom: 220px;
+  bottom: 450px;
   width: 100px;
   margin-left: 5%;
 }
@@ -690,12 +690,13 @@ footer{
 
   .redes-vertical{
     position: relative;
-    bottom: 350px;
+    bottom: 510px;
+    width: 100px;
     margin-left: 5%;
   }
   
   .iconos-redes img{
-    width: 30px;
+    width: 28px;
     margin-bottom: 25px;
   }
   
