@@ -30,50 +30,64 @@ p{
 
 header{
   display: flex;
-  flex-direction: column;
-}
-
-.nav{
-  display: flex;
-  flex-direction: row;
-  align-items: baseline;
+  align-items: center;
   justify-content: space-between;
+  padding: 1rem;
 }
 
 .logo{
-  margin:5%;
+  max-width: 12rem;
 }
 
-.bt-menu{
-  margin:5%;
-}
+.nav{
+  opacity: 0;
+  visibility: hidden;
 
-#mainNav {
-  font-family: 'YsabeauInfant';  
-  text-transform: uppercase;
-  font-size: 30px;
-  color: #020113;
-  width: 100%;
-  height: 80%;
-  padding: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  gap: 4rem;
+  position: absolute;
+  top: 0;
+  left: 25%;
+  right: 0;
+  bottom: 0rem;
   background-color: #ffffff;
-  position:fixed;
-  top: 13vh;
-  left:-100%;
+  padding: 4rem;
+  box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.3);
 }
 
-
-#mainNav a{
-  color: #19131a;
-  text-decoration: none; /*quitamos subrayado de los links*/
-  padding: 20px;
-  display: block;
+.nav.visible{
+  opacity: 1;
+  visibility: visible;
 }
 
-#mainNav a:hover{
-  color: #9c27b0; /*Color al pasar mouse por navbar*/
+.abrir-menu,
+.cerrar-menu{
+  border: 0;
+  background-color: transparent;
+  
 }
 
+.nav-list{
+  list-style-type: none;
+  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+
+.nav-list li a{
+  font-family: 'YsabeauInfant';
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #000000;
+}
+
+.nav-list a:hover{
+  color: #9c27b0;
+}
 
 .presentacion{
   background-image: url(./images/fondo3.jpg);
@@ -650,18 +664,29 @@ footer{
     grid-template-columns: repeat(4, 1fr); 
   }
   
-  header{
+  .abrir-menu{
+    display: none;
+  }
+
+  .cerrar-menu{
+    display: none;
+  }
+
+  .nav-list{
     flex-direction: row;
-    align-items: center;
   }
 
-  #mainNav{
-    display: none;
+  .nav{
+    opacity: 1;
+    visibility: visible;
+    bottom: auto;
+    top: auto;
+    box-shadow: none;
+    padding: 0;
   }
-  
 
-  .bt-menu{
-    display: none;
+  .nav-list li a{
+    font-size: 1.35rem;
   }
 
   .redes-vertical{

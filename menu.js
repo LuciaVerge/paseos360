@@ -1,21 +1,11 @@
-$(document).ready(main);
+const nav = document.querySelector("#nav");
+const abrir = document.querySelector("#abrir");
+const cerrar = document.querySelector("#cerrar");
 
-var contador = 1;
+abrir.addEventListener("click", () => {
+  nav.classList.add("visible");
+})
 
-function main(){
-	$('.bt-menu').click(function(){
-		if(contador == 1){
-			$('#mainNav').animate({
-				left: '0'
-			});
-			contador = 0;
-		} else {
-			contador = 1;
-			$('#mainNav').animate({
-				left: '-100%'
-			});
-		}
-
-	});
-
-};
+cerrar.addEventListener("click" , () => {
+    nav.classList.remove("visible");
+})
