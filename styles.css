@@ -469,22 +469,36 @@ header{
 
 /* ::::::Confian en nosotros:::::: */
 
-
-
-
-.logos-clientes img{
-  width: 90px;
-  margin: 10%;
+@keyframes scroll {
+  0%{
+    transform: translateX(0);
+  }
+  100%{
+    transform: translateX(calc(-200px * 11));
+  }
 }
-.logos-clientes{
-  width: 700px;
-  height: 210px;
+
+.clientes{
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  flex-direction: column;
   align-items: center;
- }
+  color:#9c27b0;
+  margin: auto;
+  gap: 1.5rem;
+  
+}
+
+.logos-clientes{ 
+  position: relative;
+  animation: scroll 40s linear infinite;
+  width: calc(200px * 11);
+  display: flex;
+  align-items: center;
+}
+
+.slide{
+  width: 200px;
+}
 
 
 
@@ -690,38 +704,8 @@ footer{
     height: 214px;
     width: 385px;
   }
-  #contacto{
-    display: flex;
-    flex-direction: row;
   
-  }
-    
-  #next-btn{
-  font-size: 17px;
-  }
-
-  #campos span{
-  font-size: 18px;
-  }
-  
-  .textform{
-   font-size: 18px;
-   text-align: start;
-  } 
-  
-  .logos-clientes img{
-    width: 160px;
-    margin: 10%;
-  }
-  .logos-clientes{
-    width: 700px;
-    height: 510px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-   }
+ 
   
  
   .btn img{
