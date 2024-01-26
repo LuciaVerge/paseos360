@@ -149,7 +149,10 @@ header{
   color: #d8d4d4;
   background-color: #ffffff;
   position: static;
-  padding: 10%;
+  margin-left: 2vw;
+  margin-right: 2vw;
+  margin-top: 2vh;
+  margin-bottom: 8vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -162,8 +165,9 @@ header{
 #instrucciones{
   color: #646363;
   margin-top: 5%;
-  margin-left: 21%;
-  margin-right: 21%;
+  margin-left: 2vw;
+  margin-right: 2vw;
+  margin-bottom: 2vh;
   text-align: center;
 }
 
@@ -661,6 +665,9 @@ footer{
 
   .iconos-redes img{
     width: 27px;
+  }
+  #ejemplo{
+    padding: 10%;
   }
 
   #ejemplo iframe{
