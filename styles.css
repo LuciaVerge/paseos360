@@ -469,39 +469,55 @@ header{
 
 /* ::::::Confian en nosotros:::::: */
 
-@keyframes scroll {
-  0%{
-    transform: translateX(0);
-  }
-  100%{
-    transform: translateX(calc(-200px * 11));
-  }
+:root{
+  --total-brand: 12;
+  --logo-width: 12rem;
+  --total-logo-width: calc(var(--total-brand)* var(var(--logo-width)));
+
 }
 
-.clientes{
+section h1{
+  margin-bottom: 2.5rem;
+  color: #9c27b0;
+  text-align: center;
+}
+
+.slider{
+  width:100vw;
+  height: 12rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  color:#9c27b0;
-  margin: auto;
-  gap: 1.5rem;
+  overflow: hidden;
+}
+
+.slider ul.brands{
+  list-style: none;
+  width: var(--total-logo-width);
+  display: flex;
+  animation: slideLeft 120s linear infinite;
+}
+
+@keyframes slideLeft {
+  100%{
+    transform: translateX(-100%);
+  }
   
 }
 
-.logos-clientes{ 
-  position: relative;
-  animation: scroll 40s linear infinite;
-  width: calc(200px * 11);
+ul.brands li.brand-logo{
+  width: var(--logo-width);
+  margin-left: 3rem;
+}
+
+.brands{
   display: flex;
   align-items: center;
 }
 
-.slide{
-  width: 200px;
+#logos{
+  height: 350px;
 }
-
-
-
 /* ::::::Promociones:::::: */
 
 .promociones{
