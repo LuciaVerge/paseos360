@@ -236,50 +236,23 @@
         <div>
         </section>
     </section>
-    <section id="logos">
-          <h1>Confían en nosotros</h1>
-          <div class="slider">
-            <ul class="brands">
-              <li class="brand-logo">
-                <img src="./logos-clientes/logo silvia.png"  width="200">
-              </li>
-              <li class="brand-logo">
-                <img src="./logos-clientes/logo claromeco.png"  width="200">
-              </li>
-              <li class="brand-logo">
-                <img src="./logos-clientes/logo aitenco verde.png"  width="200">
-              </li>
-              <li class="brand-logo">
-                <img src="./logos-clientes/logo arenaysol verde.png"  width="200">
-              </li>
-              <li class="brand-logo">
-                <img src="./logos-clientes/logo atardeceresdunamar.png"  width="200">
-              </li>
-              <li class="brand-logo">
-                <img src="./logos-clientes/logo buenavista.png"  width="200">
-              </li>
-              <li class="brand-logo">
-                <img src="./logos-clientes/logo casasbonitas.png"  width="200">
-              </li>
-              <li class="brand-logo">
-                <img src="./logos-clientes/logo cuyumhue.png"  width="200">
-              </li>
-              <li class="brand-logo">
-                <img src="./logos-clientes/logo laspalmeras.png"  width="200">
-              </li>
-              <li class="brand-logo">
-                <img src="./logos-clientes/logo lunamar.png"  width="200">
-              </li>
-              <li class="brand-logo">
-                <img src="./logos-clientes/logo punto mar.png"  width="200">
-              </li>
-              <li class="brand-logo">
-                <img src="./logos-clientes/logo rigel.png"  width="200">
-              </li>
-            </ul>
-          </div>
-        </div> 
-    </section>
+    <h1 id="confian">Confían en nosotros</h1>
+    <div class="logos">
+      <div class="logos-slide">
+          <img src="./logos-clientes/logo aitenco verde.png">
+          <img src="./logos-clientes/logo arenaysol verde.png">
+          <img src="./logos-clientes/logo atardeceresdunamar.png">
+          <img src="./logos-clientes/logo buenavista.png">
+          <img src="./logos-clientes/logo casasbonitas.png">
+          <img src="./logos-clientes/logo claromeco.png">
+          <img src="./logos-clientes/logo cuyumhue.png">
+          <img src="./logos-clientes/logo laspalmeras.png">
+          <img src="./logos-clientes/logo lunamar.png">
+          <img src="./logos-clientes/logo punto mar.png">
+          <img src="./logos-clientes/logo rigel.png">
+          <img src="./logos-clientes/logo silvia.png">
+      </div>
+  </div>
     <section class="promociones">
       <h3>Solicitá tu presupuesto, tenemos tarifas especiales para Inmobiliarias, Arquitectos y Constructoras.</h3>
       <button type="button" class="btn btn-outline">
@@ -326,18 +299,9 @@
         <script src="smooth.js"></script>
         <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
         <script src="menu.js"></script>
-
         <script>
-          document.addEventListener('DOMContentLoaded', function () {
-              const brands = document.querySelector('ul.brands');
-              const total_brands = brands.children.length;
-  
-              document.documentElement.style.setProperty('--total-brand', total_brands);
-  
-              for (let i = 0; i < total_brands; i++) {
-                  brands.appendChild(brands.children[i].cloneNode(true));
-              }
-          });
+          var copy = document.querySelector(".logos-slide").cloneNode(true);
+          document.querySelector(".logos").appendChild(copy);
       </script>
     </body>
 </html>

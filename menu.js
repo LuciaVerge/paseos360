@@ -13,15 +13,3 @@ cerrar.addEventListener("click" , () => {
 })
 
 
-//animacion infinita del slider de logos
-
-document.addEventListener('DOMContentLoaded', function () {
-  const brands = document.querySelector('ul.brands');
-  const total_brands = brands.children.length;
-
-  document.documentElement.style.setProperty('--total-brand', total_brands);
-
-  for (let i = 0; i < total_brands; i++) {
-      brands.appendChild(brands.children[i].cloneNode(true));
-  }
-})
