@@ -176,7 +176,8 @@ header{
 
 .nivel{
   color: #00bcd4;
-  height: 100%;
+  margin-left: 4vw;
+  margin-right: 4vw;
 }
 
 #servicios{
@@ -189,18 +190,27 @@ header{
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   margin-left: 5%;
   margin-right: 5%;
 }
 .serv-icons{
-  margin-left: 8%;
-  margin-right: 8%;
-  padding-top: 12%;
-  padding-bottom: 10%;
+  margin-left: 3%;
+  margin-right: 3%;
+  padding-top: 2%;
+  padding-bottom: 2%;
 }
 
 #dispositivos{
-  margin: 8%;
+  margin-left: 28vw;
+  margin-right: 28vw;
+  margin-top: 8vh;
+  margin-bottom: 8vh;
+}
+
+#dispositivos img{
+  width: 60vw;
+  max-width: 600px;
 }
 
 .nivel{
@@ -209,27 +219,28 @@ header{
 
 .interfaz{
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
 }
 
 .multiplataforma{
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
 }
 .virtual-reality{
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
 }
 
 .texto{
-  font-size: 25px;
+  font-size: 1.2rem;
   margin-top: 3%;
   margin-bottom: 3%;
   margin-left: 10%;
   margin-right: 10%;
+  text-align: center;
 }
 
 /* ::::::Mas Servicios:::::: */
@@ -673,18 +684,8 @@ footer{
   #ejemplo iframe{
     height: 700px;
   }
-  #servicios{
-    margin-bottom: 0%;
-    padding-top: 0%;
-  }
-  .serv-cards{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-  }
-  .texto{
-    font-size: 18px;
-  }
+  
+
   #mas-serv{
     padding-top: 1%;
     padding-bottom: 3%;
@@ -739,9 +740,6 @@ footer{
     width: 385px;
   }
   
- 
-  
- 
   .btn img{
   width: 24px;
   }
@@ -754,4 +752,33 @@ footer{
   }
 }
 
+@media(min-width: 1400px){
+  
+  #servicios{
+    margin-bottom: 0%;
+    padding-top: 0%;
+  }
+  .serv-cards{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
 
+  #dispositivos{
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+
+  #dispositivos img{
+    width: 40vw;
+  }
+  
+   
+  .serv-icons{
+    margin: 2%;
+    padding: 2%;
+    width: 50vw;
+  } 
+
+
+}
