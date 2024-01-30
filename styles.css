@@ -243,6 +243,31 @@ header{
   text-align: center;
 }
 
+/* ::::::Otros tours:::::: */
+
+.instalaciones{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 4%;
+  width: 5rem;
+  gap: 1.2rem;
+}
+
+.iconos-insta{
+ display: flex;
+ flex-direction: row;
+ flex-wrap: wrap;
+ justify-content: space-evenly;
+ margin: 10% 18%;
+
+}
+
+#otros-tours{
+  margin-top: 7%;
+}
+
 /* ::::::Mas Servicios:::::: */
 
 #mas-serv{
@@ -779,6 +804,9 @@ footer{
     padding: 2%;
     width: 50vw;
   } 
-
+  
+  .iconos-insta{
+    margin-top: 6%;
+  }
 
 }
