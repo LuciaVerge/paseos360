@@ -76,7 +76,7 @@ header{
 
 .nav-list li a{
   font-family: 'YsabeauInfant';
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   text-transform: uppercase;
   text-decoration: none;
   color: #000000;
@@ -98,7 +98,7 @@ header{
   text-align: center;
   text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.9) ;
   color: #fdfdfd;
-  width: 100vw;
+  width: 99vw;
   height: 88vh;
 }
 
