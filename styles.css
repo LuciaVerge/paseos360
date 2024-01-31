@@ -272,130 +272,54 @@ header{
 
 #mas-serv{
   background-color: #f5f5f5;
-  padding-top: 5%;
-  padding-bottom: 5%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  text-align: center;
+  padding: 4%;
 }
 
 #mas-serv h1{
-  color: #9c27b0;
-  margin-top: 15%;
-  margin-bottom: 15%;
+  color:#9c27b0;
+  margin: 4%;
 }
-.textserv{
-  font-size: 25px;
-  width: 500px;
-  height: 100px;
-  text-align: center;
-  margin-top: 2%;
-  margin-bottom: 3%;
-}
+
 .moreserv{
   display: flex;
   flex-direction: column;
+  justify-content: space-evenly;
   align-items: center;
 }
 
-.contenedor-fotografia {
-  margin-top: 5%;
-  margin-left: 5%;
-  margin-right: 5%;
-  margin-bottom: 5%;
-  width: 800px;
-  height: 750px;
-  overflow: hidden;
+.contenedor-fotografia,
+.contenedor-video{
   background-color: #ffffff;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.contenedor-fotografia a{
-  color: #0c96a8;
-  text-decoration: none;
-}
-
-.contenedor-video {
-  margin-top: 5%;
-  margin-left: 5%;
-  margin-right: 5%;
+  padding: 2%;
   margin-bottom: 5%;
-  width: 800px;
-  height: 800px;
-  overflow: hidden;
-  background-color: #ffffff;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  width: 70vw;
 }
 
-.card-foto{
-  font-size: 25px;
-  margin: 3%;
-  text-align: center;
-  width: 700px;
-  height: 800px;
-  
+.textserv{
+  font-size: 1.2rem;
+  margin: 2%;
 }
 
-.card-foto h5{
-  font-size: 25px;
-  margin-top: 5%;
-  margin-bottom: 8%;
-  margin-left: 15%;
-  margin-right: 15%;
-}
-
+.card-foto,
 .card-video{
-  font-size: 25px;
-  margin: 3%;
-  text-align: center;
-  width: 700px;
-  height: 800px;
-}
-
-
-.card-video h5{
-  font-size: 25px;
-  margin-top: 5%;
-  margin-bottom: 8%;
-  margin-left: 15%;
-  margin-right: 15%;
-}
-
-.video iframe{
-  height: 800px;
-  width: 600px;
-  
+  margin: 8%;
 }
 
 .video{
-  margin-top: 5%;
-  margin-left: 5%;
-  margin-right: 5%;
-  height: 350px;
-  width: 200px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
 }
 
-
-/*::::::Carrousel imagenes::::::*/
-
-.carousel{
-  margin-top: 5%;
-  margin-left: 5%;
-  margin-right: 5%;
-  height: 800px;
-  width: 600px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.video iframe{
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
-
 
 
 /* ::::::Ultimos Tours:::::: */ 
@@ -709,62 +633,7 @@ footer{
   #ejemplo iframe{
     height: 700px;
   }
-  
-
-  #mas-serv{
-    padding-top: 1%;
-    padding-bottom: 3%;
-  }
-  .textserv{
-    font-size: 18px;
-  }
-
-  .moreserv{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-  }
-  
-  .contenedor-fotografia {
-    width: 498px;
-    height: 580px;
-  }
-  
-  .contenedor-video {
-    width: 498px;
-    height: 580px;
-  }
-  
-  .card-foto{
-    font-size: 18px;
-    width: 326px;
-  }
- 
-  .card-foto h5{
-  font-size: 18px;
-  } 
-
-  .card-video{
-    font-size: 18px;
-    width: 326px;
-  }
-  .card-video h5{
-    font-size: 18px;
-  }
-  .video iframe{
-    height: 216px;
-    width: 380px;
-  }
-  
-  .video{
-    height: 214px;
-    width: 385px;
-  }
-  .carousel{
-    height: 214px;
-    width: 385px;
-  }
-  
+    
   .btn img{
   width: 24px;
   }
@@ -797,8 +666,7 @@ footer{
   #dispositivos img{
     width: 40vw;
   }
-  
-   
+     
   .serv-icons{
     margin: 2%;
     padding: 2%;
@@ -809,4 +677,17 @@ footer{
     margin-top: 6%;
   }
 
+  .moreserv{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: stretch;
+  }
+
+  .contenedor-fotografia,
+  .contenedor-video{
+    width: 40vw;
+  }
+  
+ 
 }
