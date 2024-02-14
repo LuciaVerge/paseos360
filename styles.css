@@ -590,6 +590,7 @@ footer{
 
 
 @media(min-width: 990px){
+
   .card-grid{
     grid-template-columns: repeat(4, 1fr); 
   }
