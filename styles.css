@@ -9,7 +9,13 @@ html {
 }
 
 body{
-  background-color: #ffffff;
+  /*background-color: #ffffff;*/
+  background-image: url(./images/fondo3.jpg);
+  background-size:cover;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-attachment:scroll;
+  background-position: center;
 }
 
 
@@ -88,11 +94,12 @@ header{
 }
 
 .presentacion{
-  background-image: url(./images/fondo3.jpg);
+  /*background-image: url(./images/fondo3.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment:scroll;
-  background-position: center;
+  background-position: center;*/
+  background-color: transparent;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -608,6 +615,7 @@ footer{
   }
 
   .nav{
+    background-color: transparent;
     opacity: 1;
     visibility: visible;
     justify-content: center;
@@ -619,8 +627,14 @@ footer{
 
   .nav-list li a{
     font-size: 1.35rem;
+    color: #ffffff;
   }
-
+  
+  .nav-list a:hover{
+    color: #cd99d6;
+    text-decoration: underline;
+  } 
+  
   .up-icon{
     position: fixed;
     z-index: 9999;
