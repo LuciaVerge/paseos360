@@ -84,6 +84,7 @@ header{
 
 .nav-list a:hover{
   color: #9c27b0;
+  text-decoration: underline;
 }
 
 .presentacion{
@@ -305,19 +306,8 @@ header{
   margin: 8%;
 }
 
-.video{
-  position: relative;
-  padding-bottom: 56.25%;
-  height: 0;
-  overflow: hidden;
-}
-
-.video iframe{
-  position: absolute;
-  top:0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+.carousel-item iframe{
+  height: 48vh;
 }
 
 
@@ -640,6 +630,7 @@ footer{
   width: 24px;
   }
 
+  
   footer{  
   font-size: 15px;
   }
@@ -677,10 +668,6 @@ footer{
     margin-top: 6%;
   }
 
-  /*#mas-serv{
-    height: 120vh;
-  }*/
-
   .moreserv{
     display: flex;
     flex-direction: row;
@@ -693,5 +680,14 @@ footer{
     width: 40vw;
   }
   
+  .carousel-item iframe{
+    height: 45vh;
+    width: 30vw;
+  }
+  
+  .carousel-item img{
+    height: 45vh;
+    width: 30vw;
+  }
  
 }

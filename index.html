@@ -55,7 +55,7 @@
         <iframe src="https://www.claromecoalquileres.com/tours/demoPaseos2/index.htm" width="100%" allowfullscreen></iframe>
       </div>
       <div>
-        <h3 id="instrucciones">Deslizá hacia todas las direcciones y hacé click en los iconos para más detalles</h3>
+        <h3 id="instrucciones">Deslizá hacia todas las direcciones y hacé click en los íconos para más detalles</h3>
       </div>
     </section>
     <section id="servicios">
@@ -72,7 +72,7 @@
               <img src="./images/icons8-natural-user-interface-2-30.png">
             </div>
             <div class="texto">
-              <p>Navegación intuitiva: Podés acceder a cada sector del tour haciendo click en los iconos de la pantalla.
+              <p><strong>Navegación intuitiva:</strong> Podés acceder a cada sector del tour haciendo click en los iconos de la pantalla.
                 Además, podemos agregar imagenes en tamaño real y videos, para hacer aun mas completa la experiencia.</p>
             </div>
           </div>
@@ -81,7 +81,7 @@
               <img src="./images/icons8-iphone-14-pro-48.png">
             </div>
             <div class="texto">
-              <p>Multiplataforma: Nuestros Tours virtuales estan especialmente diseñados para que los puedas ver en cualquier dispositivo con conexion a internet: Notebooks, Computadoras de escritorio, Tablets o Celulares.</p>
+              <p><strong>Multiplataforma:</strong> Nuestros Tours virtuales estan especialmente diseñados para que los puedas ver en cualquier dispositivo con conexion a internet: Notebooks, Computadoras de escritorio, Tablets o Celulares.</p>
             </div>
           </div>
           <div class="virtual-reality">
@@ -89,7 +89,7 @@
               <img src="./images/icons8-virtual-reality-50.png">
             </div>
             <div class="texto">
-              <p>Además, para una experiencia completamente diferente, podes acceder a los Tours con todos los dispositivos de Realidad Virtual.</p>
+              <p>Además, para una experiencia completamente diferente, podes acceder a los Tours con todos los dispositivos de <strong>Realidad Virtual</strong>.</p>
             </div>
           </div> 
         </div>
@@ -259,13 +259,28 @@
           </div>
         </div>
         <div class="contenedor-video">
-          <div class="video">
-            <iframe src="https://www.youtube.com/embed/XdqQts4mymc?si=3mCWa_BDW1kVxce4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-          </div>
-          <div class="card-video">
-            <h5>Videos en Alta resolución</h5>
-            <p>Grabamos videos en alta resolución, en diferentes formatos: horizontales para Youtube o Facebook, y verticales (a pie) para reels o historias de Instagram. En cualquiera de los formatos le agregamos tu marca de agua o logo personalizado.</p>
-          </div>   
+            <div id="carouselVideo" class="carousel slide carousel-fade">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <iframe src="https://www.youtube.com/embed/XdqQts4mymc?si=3mCWa_BDW1kVxce4" class="d-block w-100" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+                <div class="carousel-item">
+                  <iframe src="https://www.youtube.com/embed/jKD1JRDlbZY?si=7-KhAnzhGZj5tXha" class="d-block w-100" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>              
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselVideo" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselVideo" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+            <div class="card-video">
+              <h5>Videos en Alta resolución</h5>
+              <p>Grabamos videos en alta resolución, en diferentes formatos: horizontales para Youtube o Facebook, y verticales (a pie) para reels o historias de Instagram. En cualquiera de los formatos le agregamos tu marca de agua o logo personalizado.</p>
+            </div> 
         </div>
     </section> 
     <section id="tours">
