@@ -543,8 +543,9 @@ header{
 }
 
 
-.promociones h4{
+.promociones h5{
   padding-top: 4%;
+  margin: 2%;
   text-align: center;
   color: #f5f5f5;
 }
@@ -598,7 +599,9 @@ footer{
   
 }
 
-
+.derechos{
+  font-size: 2vw;
+}
 
 
 
@@ -623,6 +626,10 @@ footer{
 
   .textfooter{
     font-size: 1.8vw;
+  }
+
+  .derechos{
+    font-size: 1.4vw;
   }
 
 }
@@ -713,6 +720,10 @@ footer{
   .textfooter{
     font-size: 1.4vw;
   }
+
+  .derechos{
+    font-size: 1.1vw;
+  }
   
 }
 
@@ -788,5 +799,9 @@ footer{
   }
   .textfooter{
     font-size: 1vw;
+  }
+
+  .derechos{
+    font-size: 0.8vw;
   }
 }
