@@ -69,7 +69,13 @@ header{
 .cerrar-menu{
   border: 0;
   background-color: transparent;
-  
+}
+
+.abrir-menu{   /*Propiedades para poder ocultar/mostrar el menu hamburguesa en scroll*/
+  position: fixed;
+  right: 0;
+  left: 85%;
+  top: 4%;
 }
 
 .nav-list{

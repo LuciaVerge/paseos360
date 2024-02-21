@@ -12,4 +12,18 @@ cerrar.addEventListener("click" , () => {
     nav.classList.remove("visible");
 })
 
+//Animacion menu hamburguesa en scroll
 
+/*let ubicacionPrincipal= window.scrollY;
+
+window.addEventListener('scroll',function(){
+  let ubicacionActual= window.scrollY;
+
+  if(ubicacionPrincipal <= ubicacionActual){
+    jQuery('#abrir').fadeOut(500);
+  }else{
+    jQuery('#abrir').fadeIn(500);
+  }
+
+  ubicacionPrincipal=ubicacionActual;
+})*/

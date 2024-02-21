@@ -34,7 +34,7 @@
     }
   }
 
-  jQuery(document).ready(function() {
+  jQuery(document).ready(function() { //animacion del boton up
     var offset = 160;
     var duration = 500;
     jQuery(window).scroll(function() {
