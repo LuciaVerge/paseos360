@@ -6,6 +6,7 @@
 
 html {
   scroll-behavior: smooth;
+  font-size: 16px;
 }
 
 body{
@@ -16,6 +17,7 @@ body{
   background-repeat: no-repeat;
   background-attachment:scroll;
   background-position: center;
+  font-size: 1rem;
 }
 
 
@@ -71,12 +73,12 @@ header{
   background-color: transparent;
 }
 
-.abrir-menu{   /*Propiedades para poder ocultar/mostrar el menu hamburguesa en scroll*/
+/*.abrir-menu{  /*Propiedades para que el menu hamburguesa se pueda animar con scroll 
   position: fixed;
   right: 0;
   left: 85%;
   top: 4%;
-}
+}*/
 
 .nav-list{
   list-style-type: none;
@@ -88,7 +90,7 @@ header{
 
 .nav-list li a{
   font-family: 'YsabeauInfant';
-  font-size: 1.6rem;
+  font-size: 4vw;
   text-transform: uppercase;
   text-decoration: none;
   color: #000000;
@@ -107,7 +109,7 @@ header{
   background-position: center;*/
   background-color: transparent;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   flex-direction: column;
   text-align: center;
   text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.9) ;
@@ -119,6 +121,7 @@ header{
 .experimenta{
   margin-left: 20vw;
   margin-right: 20vw;
+  margin-top: 15vh;
 }
 
 
@@ -247,7 +250,7 @@ header{
 }
 
 .texto{
-  font-size: 1.2rem;
+  font-size: 4vw;
   margin-top: 3%;
   margin-bottom: 3%;
   margin-left: 10%;
@@ -309,7 +312,7 @@ header{
 }
 
 .textserv{
-  font-size: 1.2rem;
+  font-size: 3vw;
   margin: 2%;
   text-align: center;
 }
@@ -431,14 +434,14 @@ header{
 
 .card__category{
   color: var(--text-light);
-  font-size: 1.1rem;
+  font-size: 3vw;
   margin-bottom: var(--spacing-s);
   text-transform: uppercase;
 }
 
 .card__heading{
   color: var(--text-lighter);
-  font-size: 1.7rem;
+  font-size: 3.5vw;
   text-shadow: 2px 2px 20px rgba(0,0,0,0.2);
   line-height: 1.4;
   word-spacing: 100vw;
@@ -524,7 +527,7 @@ header{
 }
 
 .btn-outline a{
-  font-size: 25px;
+  font-size: 4vw;
   padding-bottom: 4%;
   color: #f5f5f5;
   text-decoration: none;
@@ -532,11 +535,11 @@ header{
 
 .btn {
   padding: 10px 20px;
-  font-size: 10px;
+  font-size: 3.2vw;
 }
 
 .btn img{
-  width: 35px;
+  width: 4vw;
 }
 
 
@@ -562,7 +565,7 @@ footer{
   background-image: linear-gradient(to left,#5ee7df 0%,#b490ca 100%);;
   font-family: 'YsabeauInfant';
   text-transform: uppercase;
-  font-size: 18px;
+  font-size: 2vw;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -575,6 +578,7 @@ footer{
 
 .textfooter{
   margin: 25px;
+  font-size: 3vw;
   color: #504f4f;
 }
 
@@ -600,14 +604,42 @@ footer{
 
 /*::::::Responsive::::::*/
 
+@media(min-width: 600px){
+  .presentacion{
+    justify-content: center;
+  }
 
+  .experimenta{
+    margin-top: 0;
+  }
+
+  .btn-outline a{
+    font-size: 3vw;
+  }
+
+  .btn img{
+    width: 3vw;
+  }
+
+  .textfooter{
+    font-size: 1.8vw;
+  }
+
+}
 
 @media(min-width: 990px){
 
   .card-grid{
     grid-template-columns: repeat(4, 1fr); 
   }
+
+  .card__category{
+    font-size: 1.8vw;
+  }
   
+  .card__heading{
+    font-size: 2vw;
+  }
   .abrir-menu{
     display: none;
   }
@@ -632,7 +664,7 @@ footer{
   }
 
   .nav-list li a{
-    font-size: 1.35rem;
+    font-size: 1.3vw;
     color: #ffffff;
   }
   
@@ -662,9 +694,24 @@ footer{
   width: 24px;
   }
 
+  .texto{
+    font-size: 2vw;
+  }
+
+  .textserv{
+    font-size: 2vw;
+  }
   
+  .btn-outline a{
+    font-size: 2vw;
+  }
+
   footer{  
-  font-size: 15px;
+  font-size: 2vw;
+  }
+
+  .textfooter{
+    font-size: 1.4vw;
   }
   
 }
@@ -680,6 +727,13 @@ footer{
     flex-direction: row;
     align-items: center;
   }
+  .card__category{
+    font-size: 1.5vw;
+  }
+  
+  .card__heading{
+    font-size: 1.7vw;
+  }
 
   #dispositivos{
     margin-left: 2%;
@@ -689,7 +743,14 @@ footer{
   #dispositivos img{
     width: 40vw;
   }
-     
+
+  .texto{
+    font-size: 1vw;
+  }
+  
+  .textserv{
+    font-size: 1.2vw;
+  }
   .serv-icons{
     margin: 2%;
     padding: 2%;
@@ -722,4 +783,10 @@ footer{
     width: 30vw;
   }*/
  
+  .btn-outline a{
+    font-size: 1.3vw;
+  }
+  .textfooter{
+    font-size: 1vw;
+  }
 }
