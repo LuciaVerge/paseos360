@@ -34,6 +34,22 @@
     }
   }
 
-
+  jQuery(document).ready(function() { //animacion del boton up
+    var offset = 160;
+    var duration = 500;
+    jQuery(window).scroll(function() {
+        if (jQuery(this).scrollTop() > offset) {
+            jQuery('.up-icon').fadeIn(duration);
+        } else {
+            jQuery('.up-icon').fadeOut(duration);
+        }
+    });
+    
+    jQuery('.up-icon').click(function(event) {
+        event.preventDefault();
+        jQuery('html, body').animate({scrollTop: 0}, duration);
+        return false;
+    })
+});
 
   

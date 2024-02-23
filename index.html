@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="es">
     <head>
-       <meta charset="utf-8">
+       <meta charset="utf-8"> 
+       <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
        <title>Paseos 360</title>
        <link rel="icon" href="favicon.ico" type="image/x-icon">
        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
@@ -11,30 +12,28 @@
     <body>
       <!--<img class="fondo" src="./images/fondo3.jpg">-->
         <header>
-            <nav class="navbar navbar-expand navbar-dark" id="mainNav">
-                <div class="collapse navbar-collapse justify-content" id="navbarResponsive">
-                    <ul class="navbar-nav">
-                        <li class="nav-item"><a class="nav-link" href="#mas-serv">Servicios</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#tours">Tours</a></li>
-                        <li class="nav-item"><a class="nav-link" href="./portfolio.html">Portfolio</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
-                    </ul>
-                </div> 
-            </nav>   
-            <div class="logo" id="inicio">
-            <img  src="./images/logo.png" width="225px">
-        </div>   
+          <img class="logo" src="./images/logo.png">
+          <button id="abrir" class="abrir-menu"><img src="./images/icons8-menu-50.png" width="30px"></button>
+          <nav class="nav" id="nav">
+            <button class="cerrar-menu" id="cerrar"><img src="./images/icons8-cerrar-ventana-50.png" width="30px"></button>
+            <ul class="nav-list">
+              <li><a href="#mas-serv">Servicios</a></li>
+              <li><a href="#tours">Tours</a></li>
+              <li><a href="./portfolio.html">Portfolio</a></li>
+              <li><a href="#contacto">Contacto</a></li>
+            </ul>
+          </nav>
         </header>
     <section class="presentacion">
       <div class="experimenta">
         <h2>Experimentá la última tecnología para recorrer espacios sin perderte ni un detalle.</h2>
-      </div>
-      <div>
-        <a href="#ejemplo" type="button" class="btn btn-outline-light" id="demo-button">VER DEMO</a>
+        <div>
+          <a href="#frame" type="button" class="btn btn-outline-light" id="demo-button">VER DEMO</a>
+        </div>
       </div>
     </section>
-    <a href="#inicio"><img class="up-icon" src="./images/icons8-up-50.png"></a>
-    <section class="redes-vertical">
+    <a href="#nav"><img class="up-icon" src="./images/icons8-up-50.png"></a>
+    <section class="redes-vertical"> 
       <div class="iconos-redes">
         <div>
           <a href="https://www.facebook.com/paseos360" target="_blank"><img src="./images/icons8-facebook-50.png"></a>
@@ -52,11 +51,11 @@
       </div>  
     </section>
     <section id="ejemplo">
-      <div class="container-fluid container-xl justify-content-center">
-        <iframe src="https://www.claromecoalquileres.com/tours/demoPaseos360/index.htm" width="100%"></iframe>
+      <div class="container-fluid container-xl justify-content-center" id="frame">
+        <iframe src="https://www.claromecoalquileres.com/tours/demoPaseos2/index.htm" width="100%" allowfullscreen></iframe>
       </div>
       <div>
-        <h3 id="instrucciones">Deslizá hacia todas las direcciones y hacé click en los iconos para más detalles</h3>
+        <h3 id="instrucciones">Deslizá hacia todas las direcciones y hacé click en los íconos para más detalles</h3>
       </div>
     </section>
     <section id="servicios">
@@ -73,7 +72,7 @@
               <img src="./images/icons8-natural-user-interface-2-30.png">
             </div>
             <div class="texto">
-              <p>Navegación intuitiva: Podés acceder a cada sector del tour haciendo click en los iconos de la pantalla.
+              <p><strong>Navegación intuitiva:</strong> Podés acceder a cada sector del tour haciendo click en los iconos de la pantalla.
                 Además, podemos agregar imagenes en tamaño real y videos, para hacer aun mas completa la experiencia.</p>
             </div>
           </div>
@@ -82,7 +81,7 @@
               <img src="./images/icons8-iphone-14-pro-48.png">
             </div>
             <div class="texto">
-              <p>Multiplataforma: Nuestros Tours virtuales estan especialmente diseñados para que los puedas ver en cualquier dispositivo con conexion a internet: Notebooks, Computadoras de escritorio, Tablets o Celulares.</p>
+              <p><strong>Multiplataforma:</strong> Nuestros Tours virtuales estan especialmente diseñados para que los puedas ver en cualquier dispositivo con conexion a internet: Notebooks, Computadoras de escritorio, Tablets o Celulares.</p>
             </div>
           </div>
           <div class="virtual-reality">
@@ -90,18 +89,122 @@
               <img src="./images/icons8-virtual-reality-50.png">
             </div>
             <div class="texto">
-              <p>Además, para una experiencia completamente diferente, podes acceder a los Tours con todos los dispositivos de Realidad Virtual.</p>
+              <p>Además, para una experiencia completamente diferente, podes acceder a los Tours con todos los dispositivos de <strong>Realidad Virtual</strong>.</p>
             </div>
           </div> 
         </div>
       </div>
+    </section>
+    <section id="otros-tours">
+      <div>
+        <h2 class="nivel">Mostrá todo tipo de instalaciones</h2>
+      </div>
+      <div class="iconos-insta">
+        <div class="instalaciones">
+          <div>
+            <img src="./images/icons8-departamento-50.png">
+          </div>
+          <div>
+            <p>Casas y Departamentos</p>
+          </div>
+        </div>
+        <div class="instalaciones">
+          <div>
+            <img src="./images/icons8-hotel-50.png">
+          </div>
+          <div>
+            <p>Hoteles</p>
+          </div>
+        </div>
+        <div class="instalaciones">
+          <div>
+            <img src="./images/icons8-museo-50.png">
+          </div>
+          <div>
+            <p>Museos y salas de exposición</p>
+          </div>
+        </div>
+        <div class="instalaciones">
+          <div>
+            <img src="./images/icons8-tienda-50.png">
+          </div>
+          <div>
+            <p>Comercios</p>
+          </div>
+        </div>
+        <div class="instalaciones">
+          <div>
+            <img src="./images/icons8-parque-50.png">
+          </div>
+          <div>
+            <p>Aire libre y paseos</p>
+          </div>
+        </div>
+        <div class="instalaciones">
+          <div>
+            <img src="./images/icons8-restaurante-50.png">
+          </div>
+          <div>
+            <p>Bares y Restaurantes</p>
+          </div>
+        </div>
+        <div class="instalaciones">
+          <div>
+            <img src="./images/icons8-auto-50.png">
+          </div>
+          <div>
+            <p>Vehiculos</p>
+          </div>
+        </div>
+        <div class="instalaciones">
+          <div>
+            <img src="./images/icons8-oficina-50.png">
+          </div>
+          <div>
+            <p>Empresas y Oficinas</p>
+          </div>
+        </div>
+        <div class="instalaciones">
+          <div>
+            <img src="./images/icons8-biblioteca-50.png">
+          </div>
+          <div>
+            <p>Institutos de enseñanza</p>
+          </div>
+        </div>
+        <div class="instalaciones">
+          <div>
+            <img src="./images/icons8-gimnasio-50.png">
+          </div>
+          <div>
+            <p>Gimnasios</p>
+          </div>
+        </div>
+        <div class="instalaciones">
+          <div>
+            <img src="./images/icons8-confeti-50.png">
+          </div>
+          <div>
+            <p>Salones para eventos</p>
+          </div>
+        </div>
+        <div class="instalaciones">
+          <div>
+            <img src="./images/icons8-biblioteca-50.png">
+          </div>
+          <div>
+            <p>Bibliotecas</p>
+          </div>
+        </div>
+      </div>
+      
     </section>
     <section id="mas-serv">     
       <div>
         <h1>Más Servicios</h1>
       </div>
       <div class="textserv">
-        <p>Para complementar los Recorridos Virtuales 360° también ofrecemos los servicios de Fotografía y Video en Alta Resolución.</p>
+        <p class="texto">Para complementar los Recorridos Virtuales 360° también ofrecemos los servicios de Fotografía y Video en Alta Resolución.</p>
       </div>
       <div class="moreserv">
         <div class="contenedor-fotografia">
@@ -152,17 +255,35 @@
           </div>
           <div class="card-foto">
             <h5>Fotografías en Alta Resolución</h5>
-            <p>Las fotografías son elementos fundamentales para dar a conocer tu negocio en redes sociales. Como sabemos ésto, te ofrecemos un servicio completo de fotografías en alta resolución, con tu marca de agua/logo personalizado.<a href="./portfolio.html"> Ver Portfolio</a></p>
+            <p>Las fotografías son elementos fundamentales para dar a conocer tu negocio en redes sociales. Como sabemos ésto, te ofrecemos un servicio completo de fotografías en alta resolución, con tu marca de agua/logo personalizado.<br><a href="./portfolio.html"> Ver Portfolio</a></p>
           </div>
         </div>
         <div class="contenedor-video">
-          <div class="video">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/XdqQts4mymc?si=3mCWa_BDW1kVxce4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-          </div>
-          <div class="card-video">
-            <h5>Videos en Alta resolución</h5>
-            <p>Grabamos videos en alta resolución, en diferentes formatos: horizontales para Youtube o Facebook, y verticales (a pie) para reels o historias de Instagram. En cualquiera de los formatos le agregamos tu marca de agua o logo personalizado.</p>
-          </div>   
+            <div id="carouselVideo" class="carousel slide carousel-fade">
+              <div class="carousel-inner">
+                <div class="carousel-item active iframe-container">
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/XdqQts4mymc?si=3mCWa_BDW1kVxce4" class="d-block w-100" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+                <div class="carousel-item iframe-container">
+                  <iframe src="https://www.youtube.com/embed/jKD1JRDlbZY?si=7-KhAnzhGZj5tXha" class="d-block w-100" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>              
+                </div>
+                <div class="carousel-item iframe-container">
+                  <iframe src="https://www.youtube.com/embed/NE2hFIgLOKw?si=4VQCECLwL3v6Op6u" class="d-block w-100" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselVideo" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselVideo" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+            <div class="card-video">
+              <h5>Videos en Alta resolución</h5>
+              <p>Grabamos videos en alta resolución, en diferentes formatos: horizontales para Youtube o Facebook, y verticales (a pie) para reels o historias de Instagram. En cualquiera de los formatos le agregamos tu marca de agua o logo personalizado.</p>
+            </div> 
         </div>
     </section> 
     <section id="tours">
@@ -176,137 +297,56 @@
       </div>
         <section class="hero-section">
         <div class="card-grid">
-            <a class="card" href="https://paseos360.com.ar/galeria/archuby/donbosco/" target="_blank">
+            <a class="card" href="https://paseos360.com.ar/galeria/archuby/donbosco/">
             <div class="card__background" style="background-image: url(./images/casaDonBosco.jpg)"></div>
             <div class="card__content">
                 <p class="card__category">Tandil</p>
                 <h3 class="card__heading">Casa</h3>
             </div>
             </a>
-            <a class="card" href="https://www.claromecoalquileres.com/tours/buenavista/index.htm" target="_blank">
-            <div class="card__background" style="background-image: url(./images/carrousel/01.jpg)"></div>
+            <a class="card" href="https://www.claromecoalquileres.com/tours/buenavista/index.htm">
+            <div class="card__background" style="background-image: url(./images/portfolio/horizontales/h37.jpg)"></div>
             <div class="card__content">
                 <p class="card__category">Claromecó</p>
                 <h3 class="card__heading">Hotel</h3>
             </div>
             </a>
-            <a class="card" href="https://paseos360.com.ar/galeria/archuby/cereseto/" target="_blank">
+            <a class="card" href="https://paseos360.com.ar/galeria/archuby/cereseto/">
             <div class="card__background" style="background-image: url(./images/quinta.jpg)"></div>
             <div class="card__content">
                 <p class="card__category">Tandil</p>
                 <h3 class="card__heading">Quinta</h3>
             </div>
             </li>
-            <a class="card" href="https://www.claromecoalquileres.com/tours/elonce/index.htm" target="_blank">
+            <a class="card" href="https://www.claromecoalquileres.com/tours/elonce/index.htm">
             <div class="card__background" style="background-image: url(./images/elonce.jpeg)"></div>
             <div class="card__content">
                 <p class="card__category">Claromecó</p>
                 <h3 class="card__heading">Casa</h3>
             </div>
             </a>
-          <!--
-            <a class="card" href="https://www.claromecoalquileres.com/tours/laVeritaI/index.htm" target="_blank">
-            <div class="card__background" style="background-image: url(./images/laverita.jpeg)"></div>
-            <div class="card__content">
-                <p class="card__category">Dunamar</p>
-                <h3 class="card__heading">Casa</h3>
-            </div>
-            </a>
-            <a class="card" href="https://paseos360.com.ar/galeria/archuby/teresadecalcuta/index.htm" target="_blank">
-            <div class="card__background" style="background-image: url(./images/teresa.JPG)"></div>
-            <div class="card__content">
-                <p class="card__category">Tandil</p>
-                <h3 class="card__heading">Casa</h3>
-            </div>
-            </a>
-            <a class="card" href="https://www.claromecoalquileres.com/tours/lasacacias/index.htm" target="_blank">
-            <div class="card__background" style="background-image: url(./images/cab1.JPG)"></div>
-            <div class="card__content">
-                <p class="card__category">Dunamar</p>
-                <h3 class="card__heading">Cabañas</h3>
-            </div>
-            </a>
-            <a class="card" href="https://www.claromecoalquileres.com/tours/belloAtardecer/index.htm" target="_blank">
-            <div class="card__background" style="background-image: url(./images/bello.JPG)"></div>
-            <div class="card__content">
-                <p class="card__category">Claromecó</p>
-                <h3 class="card__heading">Casa</h3>
-            </div>
-            </a>
-          -->
         <div>
         </section>
     </section>
-    <section id="contacto">
-        <div class="contacto-presentacion">
-          <div clas="confian">
-            <h1>Confían en nosotros</h1>
-          </div>
-          <div class="logos-clientes">
-            <div>
-              <img src="./logos-clientes/logo silvia.png">
-            </div>
-            <div>
-              <img src="./logos-clientes/logo claromeco.png">
-            </div>
-            <div>
-              <img src="./logos-clientes/logo aitenco verde.png">
-            </div>
-            <div>
-              <img src="./logos-clientes/logo arenaysol verde.png">
-            </div>
-            <div>
-              <img src="./logos-clientes/logo atardeceresdunamar.png">
-            </div>
-            <div>
-              <img src="./logos-clientes/logo buenavista.png">
-            </div>
-            <div>
-              <img src="./logos-clientes/logo casasbonitas.png">
-            </div>
-            <div>
-              <img src="./logos-clientes/logo cuyumhue.png">
-            </div>
-            <div>
-              <img src="./logos-clientes/logo laspalmeras.png">
-            </div>
-            <div>
-              <img src="./logos-clientes/logo lunamar.png">
-            </div>
-            <div>
-              <img src="./logos-clientes/logo punto mar.png">
-            </div>
-            <div>
-              <img src="./logos-clientes/logo rigel.png">
-            </div>
-          </div>
-          <!--<div class="textform">
-            <p>Para brindarte un servicio personalizado, dejanos tus datos y nos comunicaremos a la brevedad.</p>
-          </div>
-        </div> -->
-      <div class="formulario">
-        <!--<form>
-            <div class="input-group mb-3" id="campos">
-                <span class="input-group-text" id="inputGroup-sizing-default">Nombre y Apellido</span>
-                <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" required>
-            </div>
-            <div class="input-group mb-3" id="campos">
-                <span class="input-group-text" id="inputGroup-sizing-default">Email</span>
-                <input type="email" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
-            </div>
-            <div class="input-group mb-3" id="campos">
-                <span class="input-group-text" id="inputGroup-sizing-default">Su Consulta</span>
-                <input type="textarea" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
-            </div>
-            <div>
-                <br>
-                <button type="submit" class="btn btn-outline-light" id="next-btn">Enviar</button>
-              </div>
-        </form>-->
-    </div> 
-    </section>
+    <h1 id="confian">Confían en nosotros</h1>
+    <div class="logos">
+      <div class="logos-slide">
+          <img src="./logos-clientes/logo aitenco verde.png">
+          <img src="./logos-clientes/logo arenaysol verde.png">
+          <img src="./logos-clientes/logo atardeceresdunamar.png">
+          <img src="./logos-clientes/logo buenavista.png">
+          <img src="./logos-clientes/logo casasbonitas.png">
+          <img src="./logos-clientes/logo claromeco.png">
+          <img src="./logos-clientes/logo cuyumhue.png">
+          <img src="./logos-clientes/logo laspalmeras.png">
+          <img src="./logos-clientes/logo lunamar.png">
+          <img src="./logos-clientes/logo punto mar.png">
+          <img src="./logos-clientes/logo rigel.png">
+          <img src="./logos-clientes/logo silvia.png">
+      </div>
+  </div>
     <section class="promociones">
-      <h3>Solicitá tu presupuesto, tenemos tarifas especiales para Inmobiliarias, Arquitectos y Constructoras.</h3>
+      <h5>Solicitá tu presupuesto, tenemos tarifas especiales para Inmobiliarias, Arquitectos y Constructoras.</h5>
       <button type="button" class="btn btn-outline">
         <a href="https://api.whatsapp.com/send?phone=542494381160&text=Hola+Leonardo,+me+interesa+que+me+envien+mas+informacion+de+Paseos+360" target="_blank">
           CONTACTANOS!
@@ -328,7 +368,7 @@
             <p>Tandil, Buenos Aires - Argentina<br>
             Email: paseos360@gmail.com</p>
           </div>
-          <div class="iconos-footer">
+          <!-- <div class="iconos-footer">
             <div>
               <a href="https://www.facebook.com/paseos360" target="_blank"><img src="./images/icons8-facebook-50.png"></a>
             </div>
@@ -341,7 +381,7 @@
             <div>
               <a href="https://api.whatsapp.com/send?phone=542494381160&text=Hola+Leonardo,+me+interesa+que+me+envien+mas+informacion+de+Paseos+360" target="_blank"><img src="./images/icons8-whatsapp-50.png"></a>
             </div>
-          </div>
+          </div>  -->
           <div class="derechos">
             <p>© Todos los derechos reservados|Paseos 360</p>
           </div>
@@ -349,5 +389,12 @@
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
         <script src="smooth.js"></script>
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+        <script src="menu.js"></script>
+        <script>
+          var copy = document.querySelector(".logos-slide").cloneNode(true);
+          document.querySelector(".logos").appendChild(copy);
+      </script>
+      <script src="script.js"></script>
     </body>
 </html>

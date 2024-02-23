@@ -5,11 +5,17 @@
 
 html {
     scroll-behavior: smooth;
-    
+    font-size: 16px;
 }  
 
 body{
-    background-image: linear-gradient(to left,#b490ca 0%, #5ee7df 100%);
+  background-image: url(./images/fondo3.jpg);
+  background-size:cover;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-attachment:scroll;
+  background-position: center;
+  font-size: 1rem;
 }
 
 h1,
@@ -23,71 +29,129 @@ p{
     text-transform: uppercase;
 }
 
+
 /* ::::::Inicio:::::: */
 
-
-.logo{
-    margin-top: 1%;
-    margin-left: 2%;
-    width: 50px;
-}
-
-nav {
-    float: right;
-    font-family: 'YsabeauInfant';  
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+  }
+  
+  .logo{
+    max-width: 12rem;
+  }
+  
+  .nav{
+    opacity: 0;
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 4rem;
+    position: absolute;
+    top: 0;
+    left: 25%;
+    right: 0;
+    bottom: 0;
+    background-color: #ffffff;
+    padding: 4rem;
+    box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.3);
+  }
+  
+  .nav.visible{
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  .abrir-menu,
+  .cerrar-menu{
+    border: 0;
+    background-color: transparent;
+    
+  }
+  
+  .nav-list{
+    list-style-type: none;
+    gap: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+  }
+  
+  .nav-list li a{
+    font-family: 'YsabeauInfant';
+    font-size: 4vw;
     text-transform: uppercase;
-    font-size: 22px;
-    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
-    margin-right: 2%;
-}
+    text-decoration: none;
+    color: #050505;
+  }
+  
+  .nav-list a:hover{
+    color: #9c27b0;
+    text-decoration: underline;
+  }
+
 
 .presentacion{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    height: 500px;
-    margin-top: 5%;
-    margin-bottom: 5%;
-    margin-left: 20%;
-    margin-right: 20%;
-    text-align: center;
-    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.9) ;
-    color: #fdfdfd;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.9) ;
+  color: #fdfdfd;
+  width: 99vw;
+  height: 88vh;
 }
 
 .up-icon{
     position: fixed;
     z-index: 9999;
-    left: 900px;
-    top: 1600px;
+    right: 5%;
+    top: 90%;
   }
 
   .doble-click{
     display: none;
   }
 
-/* ::::::Fotos miniaturas:::::: */
+  .texto-foto{
+    margin-top: 4vh;
+    margin-bottom: 4vh;
+    margin-left: 18vw;
+    margin-right: 18vw;
+  }
+
+
+/* ::::::Nueva galeria grilla:::::: */
 
 .fotografias{
-    /*background-image: linear-gradient(to left,#b496c7 0%,#b0cfcd 100%);*/
-    background-color: #fdfdfd;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+  margin-top: 4%;
+  margin-bottom: 4%;
+  padding-left: 1%;
+  padding-right: 1%;
+  background-color: #ffffff;
+  
 }
 
-.fotografias img{
-    width: 790px;
-    margin: 3%;
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
 }
 
-.foto{
-    width: 800px;
-
+.column {
+  flex: 100%;
+  max-width: 100%;
+  padding: 0 4px;
 }
 
-
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
 
 /* ::::::Footer:::::: */
 
@@ -105,7 +169,7 @@ footer{
     background-image: linear-gradient(to left,#5ee7df 0%,#b490ca 100%);
     font-family: 'YsabeauInfant';
     text-transform: uppercase;
-    font-size: 18px;
+    font-size: 2vw;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -118,6 +182,7 @@ footer{
 
 .textfooter{
     margin: 25px;
+    font-size: 3vw;
     color: #504f4f;
 }
 
@@ -137,24 +202,120 @@ footer{
     
 }
 
+.derechos{
+  font-size: 2vw;
+}
 
 /*::::::Responsive::::::*/
+
+@media(min-width: 600px){
+  .column {
+    flex: 50%;
+    max-width: 100%;
+  }
+
+  .btn-outline a{
+    font-size: 3vw;
+  }
+
+  .btn img{
+    width: 3vw;
+  }
+
+  .textfooter{
+    font-size: 1.8vw;
+  }
+
+  .derechos{
+    font-size: 1.4vw;
+  }
+
+
+}
+
 @media(min-width: 990px){
-    nav {
-        font-size: 19px;
+
+    .abrir-menu{
+        display: none;
       }
-      
-    footer{  
+    
+      .cerrar-menu{
+        display: none;
+      }
+    
+      .nav-list{
+        flex-direction: row;
+      }
+    
+      .nav{
+        opacity: 1;
+        visibility: visible;
+        justify-content: center;
+        bottom: auto;
+        top: auto;
+        box-shadow: none;
+        padding: 1.5rem;
+        background-color: transparent;
+      }
+    
+      .nav-list li a{
+        font-size: 1.3vw;
+        color: #ffffff;
+      }
+
+      .nav-list a:hover{
+        color: #a179a8;
+        text-decoration: underline;
+      }
+
+      .column {
+        flex: 25%;
+        max-width: 100%;
+      }
+
+      footer{  
         font-size: 15px;
         }
 
-    .up-icon{
+      .up-icon{
         position: fixed;
         z-index: 9999;
-        left: 1800px;
-        top: 850px;
-        }
-    .doble-click{
+      }
+
+      .doble-click{
         display: block;
+        margin-top: 4vh;
+        color: #4b4a4a;
+        text-shadow: 2px 2px 8px rgba(255, 255, 255, 0.9) ;
+      }
+
+      .btn-outline a{
+          font-size: 2vw;
         }
+      
+      footer{  
+        font-size: 2vw;
+        }
+      
+      .textfooter{
+          font-size: 1.4vw;
+        }
+      
+      .derechos{
+          font-size: 1.1vw;
+        }
+}
+
+@media(min-width: 1400px){
+ 
+  .btn-outline a{
+    font-size: 1.3vw;
+  }
+  .textfooter{
+    font-size: 1vw;
+  }
+
+  .derechos{
+    font-size: 0.8vw;
+  }
 }

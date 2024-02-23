@@ -7,7 +7,7 @@ function handleWheelScroll(event) {
 
   // Obtener la distancia de desplazamiento
   const delta = Math.sign(event.deltaY);
-  const scrollDistance = 1300; // Distancia de desplazamiento
+  const scrollDistance = 916; // Distancia de desplazamiento
 
   // Calcular la posición de desplazamiento
   const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
